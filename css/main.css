@@ -1791,6 +1791,24 @@ ul#nav li.current a:after {
   	padding: 15px 32px;
 }
 
+#about #coinranking {
+  	background-color: #03fc24;
+  	border: none;
+  	color: #ffffff;
+  	padding: 15px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font: 18px/36px "raleway-heavy", sans-serif;
+  	border-radius: 8px;
+}
+
+#about #coinranking:hover {
+  	background-color: #ffffff;
+  	color: #03fc24;
+  	padding: 15px 32px;
+}
+
 #about .timeline {
  	position: relative;
   	max-width: 1200px;
