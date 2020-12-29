@@ -1,0 +1,897 @@
+/* =================================================================== */
+/*
+/*  KREO v1.0 Base Stylesheet
+/*  url: styleshout.com
+/*  10-12-2015
+/*
+/* =================================================================== */
+
+/* 
+/* Reset - normalize.css v3.0.1 | MIT License | git.io/normalize 
+/* =================================================================== */
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a {
+	background: transparent;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn {
+	font-style: italic;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 1em 40px;
+}
+
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+pre {
+	overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input {
+	line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+/*
+/* Basic Setup Styles - Top Elements 
+/* =================================================================== */
+
+/* NOTE
+html is set to 62.5% so that if you use REMS, all the measurements 
+are based on 10px sizing. So basically 1.5rem = 15px  */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 62.5%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+}
+
+
+/*
+/* Typography 
+====================================================================== */
+
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-rendering: optimizeLegibility;
+	line-height: 1.2;
+}
+
+hr {
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 11px 0 24px;
+	height: 0;
+}
+
+em,
+i {
+	font-style: italic;
+	line-height: inherit;
+}
+
+strong,
+b {
+	font-weight: bold;
+	line-height: inherit;
+}
+
+small {
+	font-size: 60%;
+	line-height: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+ol,
+ul.square,
+ul.circle,
+ul.disc {
+	margin-left: 17px;
+}
+
+ul.square {
+	list-style: square;
+}
+
+ul.circle {
+	list-style: circle;
+}
+
+ul.disc {
+	list-style: disc;
+}
+
+ul li {
+	padding-left: 4px;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin: 3px 0 3px 17px;
+}
+
+/* links
+---------------------------------------------------------------------- */
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+
+a img {
+	border: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+p a,
+p a:visited {
+	line-height: inherit;
+}
+
+/* 
+/* Media 
+/* =================================================================== */
+
+img,
+video,
+embed,
+object {
+	max-width: 100%;
+	height: auto;
+}
+
+object,
+embed {
+	height: 100%;
+}
+
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+/* 
+/* Grid
+===================================================================== */
+
+.row {
+	width: 94%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.column,
+.columns,
+.bgrid {
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.column,
+.columns {
+	padding: 0 20px;
+}
+
+.column.centered,
+.columns.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed,
+.columns.collapsed {
+	padding: 0;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+	float: right;
+}
+
+[class*="column"] + [class*="column"].end {
+	float: right;
+}
+
+.one,
+.row .one {
+	width: 8.33333%;
+}
+
+.two,
+.row .two {
+	width: 16.66667%;
+}
+
+.three,
+.row .three {
+	width: 25%;
+}
+
+.four,
+.row .four {
+	width: 33.33333%;
+}
+
+.five,
+.row .five {
+	width: 41.66667%;
+}
+
+.six,
+.row .six {
+	width: 50%;
+}
+
+.seven,
+.row .seven {
+	width: 58.33333%;
+}
+
+.eight,
+.row .eight {
+	width: 66.66667%;
+}
+
+.nine,
+.row .nine {
+	width: 75%;
+}
+
+.ten .row .ten {
+	width: 83.33333%;
+}
+
+.eleven,
+.row .eleven {
+	width: 91.66667%;
+}
+
+.twelve,
+.row .twelve {
+	width: 100%;
+}
+
+/* small screens
+--------------------------------------------------------------- */
+@media screen and (max-width:1024px) {
+	.row .row {
+		margin-left: -18px;
+		margin-right: -18px;
+	}
+
+	.column,
+	.columns {
+		padding: 0 18px;
+	}
+
+}
+
+/* tablets
+--------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+	.row {
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.column,
+	.columns {
+		padding: 0 15px;
+	}
+
+	.tab-fourth,
+	.row .tab-fourth {
+		width: 25%;
+	}
+
+	.tab-third,
+	.row .tab-third {
+		width: 33.33333%;
+	}
+
+	.tab-half,
+	.row .tab-half {
+		width: 50%;
+	}
+
+	.tab-2thirds,
+	.row .tab-2thirds {
+		width: 66.66667%;
+	}
+
+	.tab-3fourths,
+	.row .tab-3fourths {
+		width: 75%;
+	}
+
+	.tab-whole,
+	.row .tab-whole {
+		width: 100%;
+	}
+
+}
+
+/* large mobile devices
+--------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.row {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.row .row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	.column,
+	.columns {
+		padding: 0 10px;
+	}
+
+	.mob-fourth,
+	.row .mob-fourth {
+		width: 25%;
+	}
+
+	.mob-half,
+	.row .mob-half {
+		width: 50%;
+	}
+
+	.mob-3fourths,
+	.row .mob-3fourths {
+		width: 75%;
+	}
+
+	.mob-whole,
+	.row .mob-whole {
+		width: 100%;
+	}
+
+}
+
+/* small mobile devices
+--------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.row {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.row .row {
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.column,
+	.columns {
+		width: auto !important;
+		float: none !important;
+		margin-left: 0;
+		margin-right: 0;
+		clear: both;
+		padding: 0;
+	}
+
+	[class*="column"] + [class*="column"]:last-child {
+		float: none;
+	}
+
+}
+
+/* 
+/* block grids
+===================================================================== */
+.bgrid-sixth .bgrid {
+	width: 16.66667%;
+}
+
+.bgrid-fourth .bgrid {
+	width: 25%;
+}
+
+.bgrid-third .bgrid {
+	width: 33.33333%;
+}
+
+.bgrid-half .bgrid {
+	width: 50%;
+}
+
+.bgrid {
+	padding: 0;
+}
+
+/* Clearing for block grid columns. Allows columns with 
+different heights to align properly.
+--------------------------------------------------------------------- */
+.bgrid-sixth .bgrid:nth-child(6n+1),
+.bgrid-fourth .bgrid:nth-child(4n+1),
+.bgrid-third .bgrid:nth-child(3n+1),
+.bgrid-half .bgrid:nth-child(2n+1) {
+	clear: both;
+}
+
+/* small screens
+--------------------------------------------------------------- */
+@media screen and (max-width:1024px) {
+
+	/* block grids for small screens */
+	.s-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+
+	.s-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+
+	.s-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+
+	.s-bgrid-half .bgrid {
+		width: 50%;
+	}
+
+	.s-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.s-bgrid-sixth .bgrid:nth-child(6n+1),
+	.s-bgrid-fourth .bgrid:nth-child(4n+1),
+	.s-bgrid-third .bgrid:nth-child(3n+1),
+	.s-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* tablets
+--------------------------------------------------------------- */
+@media screen and (max-width:768px) {
+	.tab-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+
+	.tab-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+
+	.tab-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+
+	.tab-bgrid-half .bgrid {
+		width: 50%;
+	}
+
+	.tab-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="tab-bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.tab-bgrid-sixth .bgrid:nth-child(6n+1),
+	.tab-bgrid-fourth .bgrid:nth-child(4n+1),
+	.tab-bgrid-third .bgrid:nth-child(3n+1),
+	.tab-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* mobile devices
+--------------------------------------------------------------- */
+@media screen and (max-width:600px) {
+	.mob-bgrid-sixth .bgrid {
+		width: 16.66667%;
+	}
+
+	.mob-bgrid-fourth .bgrid {
+		width: 25%;
+	}
+
+	.mob-bgrid-third .bgrid {
+		width: 33.33333%;
+	}
+
+	.mob-bgrid-half .bgrid {
+		width: 50%;
+	}
+
+	.mob-bgrid-whole .bgrid {
+		width: 100%;
+		clear: both;
+	}
+
+	[class*="mob-bgrid-"] .bgrid:nth-child(n) {
+		clear: none;
+	}
+
+	.mob-bgrid-sixth .bgrid:nth-child(6n+1),
+	.mob-bgrid-fourth .bgrid:nth-child(4n+1),
+	.mob-bgrid-third .bgrid:nth-child(3n+1),
+	.mob-bgrid-half .bgrid:nth-child(2n+1) {
+		clear: both;
+	}
+
+}
+
+/* stack on small mobile devices
+--------------------------------------------------------------- */
+@media screen and (max-width:400px) {
+	.stack .bgrid {
+		width: auto !important;
+		float: none !important;
+		margin-left: 0;
+		margin-right: 0;
+		clear: both;
+	}
+
+}
+
+/* 
+/* MISC
+===================================================================== */
+
+/* Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+--------------------------------------------------------------------- */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+/* Misc Helper Styles 
+--------------------------------------------------------------------- */
+.hide {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.remove-bottom {
+	margin-bottom: 0;
+}
+
+.half-bottom {
+	margin-bottom: 15px !important;
+}
+
+.add-bottom {
+	margin-bottom: 30px !important;
+}
+
+.no-border {
+	border: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.align-center {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
