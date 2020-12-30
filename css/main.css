@@ -1756,9 +1756,9 @@ ul#nav li.current a:after {
 }
 
 #about #tronscan {
-  	background-color: #ff1717;
-  	border: none;
-  	color: #ffffff;
+  	background-color: #111417;
+  	border: solid 2px;
+  	color: #ff1717;
   	padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
@@ -1768,15 +1768,15 @@ ul#nav li.current a:after {
 }
 
 #about #tronscan:hover {
-  	background-color: #ffffff;
-  	color: #ff1717;
+  	background-color: #ff1717;
+  	color: #111417;
   	padding: 15px 32px;
 }
 
 #about #cctip {
-  	background-color: #2074fa;
-  	border: none;
-  	color: #ffffff;
+  	background-color: #111417;
+  	border: solid 2px;
+  	color: #2074fa;
   	padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
@@ -1786,15 +1786,15 @@ ul#nav li.current a:after {
 }
 
 #about #cctip:hover {
-  	background-color: #ffffff;
-  	color: #2074fa;
+  	background-color: #2074fa;
+  	color: #111417;
   	padding: 15px 32px;
 }
 
 #about #coinranking {
-  	background-color: #03fc24;
-  	border: none;
-  	color: #ffffff;
+  	background-color: #111417;
+  	border: solid 2px;
+  	color: #03fc24;
   	padding: 15px 32px;
   	text-align: center;
   	text-decoration: none;
@@ -1804,8 +1804,8 @@ ul#nav li.current a:after {
 }
 
 #about #coinranking:hover {
-  	background-color: #ffffff;
-  	color: #03fc24;
+  	background-color: #03fc24;
+  	color: #111417;
   	padding: 15px 32px;
 }
 
