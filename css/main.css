@@ -161,11 +161,11 @@ blockquote {
 	margin: 18px 0px;
 	padding-left: 40px;
 	position: relative;
+	color: #ffffff;
 }
 
 blockquote:before {
 	content: "\201C";
-	opacity: 0.45;
 	font-size: 80px;
 	line-height: 0px;
 	margin: 0;
@@ -173,6 +173,7 @@ blockquote:before {
 	position: absolute;
 	top: 30px;
 	left: 0;
+	color: #fdc501;
 }
 
 blockquote p {
@@ -1787,24 +1788,6 @@ ul#nav li.current a:after {
 
 #about #cctip:hover {
   	background-color: #2074fa;
-  	color: #111417;
-  	padding: 15px 32px;
-}
-
-#about #coinranking {
-  	background-color: #111417;
-  	border: solid 2px;
-  	color: #03fc24;
-  	padding: 15px 32px;
-  	text-align: center;
-  	text-decoration: none;
-  	display: inline-block;
-  	font: 18px/36px "raleway-heavy", sans-serif;
-  	border-radius: 8px;
-}
-
-#about #coinranking:hover {
-  	background-color: #03fc24;
   	color: #111417;
   	padding: 15px 32px;
 }
